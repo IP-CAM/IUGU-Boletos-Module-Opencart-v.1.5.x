@@ -1,49 +1,49 @@
-# IUGU - Módulo OpenCart p/ Boletos
+# IUGU - OpenCart Module for Boletos
 
-## Instalação
+## Installation
 
-Módulo Desenvolvido por Felipo Antonoff Araújo - http://www.codemarket.com.br
+Module Developed by Felipo Antonoff Araújo - http://www.codemarket.com.br
 
-Passo 1) Envie para a raiz da sua Loja as Pastas:
-admin, catalog, imagem, system e vqmod
+Step 1) Send the Folders to the root of your Store:
+admin, catalog, image, system and vqmod
 
-Passo 2) Se preciso de permissões nas pastas enviadas, se a hospedagem estiver configurada corretamente não vai ser preciso
+Step 2) If I need permissions on the folders sent, if the hosting is configured correctly it will not be necessary
 
-Passo 3) Entre no Administrador da loja e vai Sistema -> Usuários -> Grupos de Usuários
-Clique em Editar no seu Grupo de usuário, normalmente o Administrador e de permissão de Acesso e Modificação para o  payment/iugu_bankslip
-Pode clicar em Marcar tudo para dar permissão geral e depois clique em Salvar
-O Passo 3 as vezes não é preciso.
+Step 3) Enter the Store Administrator and go to System -> Users -> User Groups
+Click Edit on your User Group, usually the Administrator and Access and Modification permission for payment / iugu_bankslip
+You can click Check all to give general permission and then click Save
+Step 3 is sometimes not necessary.
 
-Passo 4) Ainda dentro do Administrador da Loja, vai em Extensões -> Formas de Pagamento e Procura por iugu Boleto, depois na linha dele clique em Instalar
+Step 4) Still within the Store Administrator, go to Extensions -> Payment Methods and Search for iugu Boleto, then on its line click Install
 
-Passo 5) Clique agora em Editar, pronto configure o Módulo com o Token da iugu e as outras opções
+Step 5) Now click on Edit, ready configure the Module with the iugu Token and the other options
 
-## Teste
+## Test
 
-Faça uma simulação de compra na Loja e veja se aparece o Pagamento Boleto iugu, lembrando que pode editar o nome dele no painel do Módulo e depois
-prossiga com a compra.
-Pode usar o Token de teste geradi na iugu, se quiser apenas simular uma compra
+Make a simulation of purchase in the Store and see if the Boleto Boleto payment appears, remembering that you can edit its name in the Module panel and then
+proceed with the purchase.
+You can use the Geradi test Token on iugu, if you just want to simulate a purchase
 
-## Retorno do Status
+## Return of Status
 
-O retorno é automático, o Módulo já informa a iugu a URL de retorno, lembre-se também de instalar o vQmod 2.3 ou mais recente
+The return is automatic, the Module already informs the iugu the return URL, also remember to install vQmod 2.3 or later
 http://www.codemarket.com.br/opencart/modulos-gerais/vqmod-ferramenta-essencial
-Ele é gratuita e importante para o uso de diversos módulos, pois altera arquivos sem mexer direto neles, sendo mais fácil de manutenção por isso
+It is free and important for the use of several modules, as it changes files without touching them directly, being easier to maintain so
 
-No caso do iugu Boleto é preciso do vqmod, pois acompanha um xml de URL Amigável por completo, ele coloca URL Amigável geral na loja, pois por padrão
-o Opencart só coloca em alguns locais, é preciso desse xml ativo, pois a URL de notificação da iugu só pega se for amigável
+In the case of iugu Boleto, you need vqmod, as it accompanies a completely friendly URL xml, it places a general friendly URL in the store, because by default
+Opencart only places it in some places, you need this active xml, because iugu's notification URL only gets if it is friendly
 
-Por tanto para o Retorno, faça mais um passo, ative a URL Amigável da Loja e verifique se o endereço:
-sualoja.com.br/iugu-boleto-notificar aparece uma tela branca, se aparecer está certo
+Therefore, for Return, take one more step, activate the Friendly URL of the Store and check if the address:
+sualoja.com.br/iugu-boleto-notificar a white screen appears, if it appears it is right
 
-Caso já tenham algum módulo de URL Amigável geral, desativem ele ou o Felipo-SEO-URL.xml, caso contrário pode causar conflito entre eles
-Caso desativem o Felipo-SEO-URL.xml, lembre-se de configurar no outro Módulo a seguinte URL:
-'payment/iugu_bankslip/callback' => 'iugu-boleto-notificar',
+If you already have a general friendly URL module, disable it or Felipo-SEO-URL.xml, otherwise it may cause conflict between them
+If you disable Felipo-SEO-URL.xml, remember to configure the following URL in the other Module:
+'payment / iugu_bankslip / callback' => 'iugu-boleto-notificar',
 
-## Licença
+## License
 
-A licença do Módulo é a GPL 3, por tanto é um módulo gratuito e pode ser utilizado em diversas lojas, mas sem fim lucrativo, qualquer produto derivado dele, deve
-ser também GPL 3 e por isso gratuito, não cobre dos seus clientes por ele, mas sim pelos seus serviços de instalação, configuração e teste
-Para mais detalhes sobre ela, acesse - http://www.gnu.org/licenses/
+The Module license is the GPL 3, therefore it is a free module and can be used in several stores, but without profit, any product derived from it, must
+also be GPL 3 and therefore free, it does not charge its customers for it, but for its installation, configuration and testing services
+For more details about it, visit - http://www.gnu.org/licenses/
 
-Caso queira suporte pago para esse Módulo ou outros Módulos para Opencart, acesse - http://www.codemarket.com.br
+If you want paid support for this module or other modules for Opencart, visit - http://www.codemarket.com.br 
